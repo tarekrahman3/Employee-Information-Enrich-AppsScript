@@ -6,7 +6,7 @@
  * @param {String} api_key - The string
  */
 function single_enrich(first_name,last_name,company,domain,api_key) {
-	const response = people_match_api(first_name,last_name,company,domain,api_key)
+  const response = people_match_api(first_name,last_name,company,domain,api_key)
   const response_headers = response.getHeaders();
   console.log(response.getContentText(),response_headers)
   try {
